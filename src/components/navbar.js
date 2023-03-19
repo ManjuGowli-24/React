@@ -1,12 +1,10 @@
-import React from 'react'
-import PropTypes from 'prop-types'
+import React from 'react';
+import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
+// import About from '../components/about.js';
 
 export default function NavBar(props) {
     
-    const location=()=>{
-        <a href="https://www.w3schools.com/w3css/w3css_borders.asp " target="_blank"></a>
-    }
-
   return (
     <>
     <nav>
@@ -14,11 +12,11 @@ export default function NavBar(props) {
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></link>
      <div className="navbar" >
             <ul >
-                <li><a className="active" href="#home"></a>Home</li>
-                <li onClick={location} > Location<a href="#loc" /></li>
-                <li><a href="#rules"></a>Rules</li>
-                <li><a href="#rate"></a>Rate</li>
-                <li><a href="#contact"></a>Contact</li>
+                <li><Link  to="/">Home</Link></li>
+                <li ><Link to=""></Link> Location</li>
+                <li><Link to=""></Link>Rules</li>
+                <li><Link to=""></Link>Rate</li>
+                <li><Link to=""></Link>Contact</li>
                 <div  className="serbar" >
                 <li>
                     <form>
@@ -26,11 +24,11 @@ export default function NavBar(props) {
                         <button type="submit" className="button"><i className="fa fa-search" ></i> </button>
                     </form>
                 </li>
+                <li><Link to="/about">About</Link></li>
                 </div>
               </ul>
         </div>
-    </nav> 
-   
+    </nav>
     </>
   )
 }
