@@ -8,7 +8,7 @@ export default function SignUp() {
   return (
     <>
     <div className='log'>
-    <h1 style={{color : 'green'}}>Sign Up</h1>
+    <h1 style={{color : 'rgb(32, 168, 231)'}}>Sign Up</h1>
     <p>Please fill in this form to create an account.</p><br />
 
     <label for="email"><b>Email</b></label><br />
@@ -19,7 +19,7 @@ export default function SignUp() {
 
     <label for="psw-repeat"><b>Repeat Password</b></label><br />
     <input type="password" placeholder="Repeat Password" name="psw-repeat" required/><br/>
-    <button type="submit" onClick={created} className='btn btn-primary my-2'>SignUp</button>
+    <button type="submit" onClick={created} className='btn btn-primary my-2'>Sign Up</button>
     </div>
    
     </>

@@ -9,6 +9,10 @@ export default function Web() {
         border:"5px solid #555"
     }
     const row={
+        float: "right",
+        marginTop: "70px",
+        marginleft: "75px",
+        width : "75%",
         display: "flex"
     }
     const column={

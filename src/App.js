@@ -7,7 +7,8 @@ import About from './components/about.js';
 import Footer from './components/footer.js';
 import LogIn from './components/login.js';
 import SignUp from './components/signup.js';
-// import Web from './components/Web.js';
+import TextArea from './components/textarea.js';
+import Web from './components/Web.js';
 
 import {
   BrowserRouter as Router,
@@ -22,14 +23,13 @@ function App() {
 <div className="headder">
 <Router>
 {/*name is for understanding props--*/}
-  <NavBar name="This is web page of zoo" sticky="top"/>
-  
+  <NavBar name="This is web page of zoo" />
+  <SideBar/>
   <div className="container">
   <Switch>
-
   <Route exact path="/"  >
   {/*<Web/>*/}
-  <SideBar />
+  <Web/>
   </Route>
 
   <Route exact path="/About">
@@ -47,6 +47,7 @@ function App() {
   <Route path='/location' component={() => {
     window.location.href = 'https://www.google.com/maps/@12.9230596,77.6657531,15z';
     return null;
+
 }}/>
 
 
@@ -56,7 +57,7 @@ function App() {
   </Router>
   </div>
   <div>
-  
+    
   </div>
  
 

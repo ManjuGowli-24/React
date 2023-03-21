@@ -1,40 +1,24 @@
 import React , {useState} from 'react';
 // import { Link } from 'react-router-dom';
-import Web from './Web';
-// import TextArea from './textarea';
+// import Web from './Web';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route
+} from "react-router-dom";
+import TextArea from './textarea.js';
 
 export default function SideBar(props) {
     
-    const handleUpClick =()=>{
-        console.log("Upper case clicked");
-        let newtext = text.toUpperCase();
-        setText(newtext);
-    }
-    const handleClearClick =()=>{
-        let newtext = '';
-        setText(newtext);
-    }
-    
-    const handleOnChaneg =(event)=>{
-        console.log("on cahange");
-        setText(event.target.value);
-    }
-
-    const [text,setText]=useState('Enter your text here');
-    const backimg={
-        backgroundImage:"./image/camel.jpg"
-    }
   return (
     <>
-
-
+<div >
 <div className="sidebaritem">
   <ul >
-    <li><a href="#" className="map"></a>Map</li>
-    <li><a href="#" className="locaton"></a>Location </li>
-    <li> catogory<i className="fa fa-caret-down"></i></li>
-    <li><a href="#" className="mp"></a>anim</li>
-    <li><a href="#" className="mp"></a>Support</li>
+    <li><a href="/suggestion" >Rules</a></li>
+    <li><a href="/suggestion" >catogory</a><i className="fa fa-caret-down"></i></li>
+    <li><a href="/suggestion" >Contact Us</a></li>
+    <li><a href="/suggestion" >Suggestion</a></li>
   </ul>
   </div>
 
@@ -49,8 +33,13 @@ export default function SideBar(props) {
   
 <TextArea/>
   */}
-  <Web/>
-
+  <Router>
+  <Switch>
+  <Route path="/suggestion">
+  <TextArea/>
+  </Route></Switch>
+  </Router> 
+  </div>
   </>
   )
   }
