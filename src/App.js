@@ -2,8 +2,13 @@
 import './App.css';
 import NavBar from './components/navbar.js';
 import SideBar from './components/sidebar.js';
-import TextArea from './components/textarea.js';
+import Main from './components/main.js';
 import About from './components/about.js';
+import Footer from './components/footer.js';
+import LogIn from './components/login.js';
+import SignUp from './components/signup.js';
+// import Web from './components/Web.js';
+
 import {
   BrowserRouter as Router,
   Switch,
@@ -14,25 +19,47 @@ import {
 function App() {
   return ( 
   <>
-
+<div className="headder">
 <Router>
-/*name is for understanding props--*/
-  <NavBar name="This is web page of zoo"/>
+{/*name is for understanding props--*/}
+  <NavBar name="This is web page of zoo" sticky="top"/>
   
   <div className="container">
   <Switch>
-  <Route exact path="/about">
+
+  <Route exact path="/"  >
+  {/*<Web/>*/}
+  <SideBar />
+  </Route>
+
+  <Route exact path="/About">
   <About/>
   </Route>
 
-  <Route exact path="/"  >
-  <SideBar heading="Enter text to analyze"/>
+  <Route exact path="/LogIn">
+  <LogIn/>
   </Route>
+
+  <Route exact path="/SignUp">
+  <SignUp/>
+  </Route>
+
+  <Route path='/location' component={() => {
+    window.location.href = 'https://www.google.com/maps/@12.9230596,77.6657531,15z';
+    return null;
+}}/>
+
+
 
   </Switch>
   </div>
-
   </Router>
+  </div>
+  <div>
+  
+  </div>
+ 
+
   </>
   );
 }

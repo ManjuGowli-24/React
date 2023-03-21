@@ -4,19 +4,18 @@ import { Link } from 'react-router-dom';
 // import About from '../components/about.js';
 
 export default function NavBar(props) {
-    
+    const location=()=>{
+        console.log("location was clicked")    
+    }
   return (
     <>
     <nav>
-    <h3>{props.name}</h3>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></link>
      <div className="navbar" >
             <ul >
-                <li><Link  to="/">Home</Link></li>
-                <li ><Link to=""></Link> Location</li>
-                <li><Link to=""></Link>Rules</li>
-                <li><Link to=""></Link>Rate</li>
-                <li><Link to=""></Link>Contact</li>
+                <li><a href="/">Home</a></li>
+                <li> <a href="/location" >Location</a></li>
+                <li><a href="/about">About</a></li>
                 <div  className="serbar" >
                 <li>
                     <form>
@@ -24,7 +23,8 @@ export default function NavBar(props) {
                         <button type="submit" className="button"><i className="fa fa-search" ></i> </button>
                     </form>
                 </li>
-                <li><Link to="/about">About</Link></li>
+                <li><a href="/login">LogIn</a></li>
+                <li><a href="/signup">SignUp</a></li>
                 </div>
               </ul>
         </div>

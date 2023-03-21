@@ -25,7 +25,7 @@ export default function TextArea(props) {
     <div className='cont'>
     <h1>{props.heading}</h1>
     <div className="mb-3">
-     <textarea className="form-control"  value={text} onChange={handleOnChaneg} id="mytext" rows="90" ></textarea> 
+     <textarea className="form-control"  value={text} onChange={handleOnChaneg} id="mytext" rows="9" ></textarea> 
      </div>
       <button className='btn btn-primary mx-2' onClick={handleUpClick}>convert to upper case</button>
       <button className='btn btn-primary' onClick={handleClearClick}>clear text </button>

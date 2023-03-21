@@ -1,5 +1,7 @@
 import React , {useState} from 'react';
 // import { Link } from 'react-router-dom';
+import Web from './Web';
+// import TextArea from './textarea';
 
 export default function SideBar(props) {
     
@@ -19,9 +21,13 @@ export default function SideBar(props) {
     }
 
     const [text,setText]=useState('Enter your text here');
-    
+    const backimg={
+        backgroundImage:"./image/camel.jpg"
+    }
   return (
     <>
+
+
 <div className="sidebaritem">
   <ul >
     <li><a href="#" className="map"></a>Map</li>
@@ -32,14 +38,19 @@ export default function SideBar(props) {
   </ul>
   </div>
 
-  <div className='cont'>
+  {/*<div className='cont'>
   <h1>{props.heading}</h1>
   <div className="mb-3">
    <textarea className="form-control"  value={text} onChange={handleOnChaneg} id="mytext" rows="8" ></textarea> 
    </div>
     <button className='btn btn-primary mx-2' onClick={handleUpClick}>convert to upper case</button>
     <button className='btn btn-primary' onClick={handleClearClick}>clear text </button>
-    </div>
+  </div>
+  
+<TextArea/>
+  */}
+  <Web/>
+
   </>
   )
   }
