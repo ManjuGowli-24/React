@@ -40,7 +40,7 @@ function App() {
   <LogIn/>
   </Route>
 
-  <Route exact path="/SignUp">
+  <Route exact path="/SignUp" >
   <SignUp/>
   </Route>
 

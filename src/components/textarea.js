@@ -1,5 +1,6 @@
-
-import React,{useState}from 'react'
+import ReactDOM from 'react-dom/client';
+import Recat from 'react';
+import React,{useState} from 'react';
 
 export default function TextArea(props) {
   const cont={
@@ -12,6 +13,8 @@ export default function TextArea(props) {
         console.log("Upper case clicked");
         let newtext = text.toUpperCase();
         setText(newtext);
+        const a=ReactDOM.createRoot(document.getElementById('mytext'));
+        a.render(text);
     }
     const handleClearClick =()=>{
         let newtext = '';
@@ -21,6 +24,7 @@ export default function TextArea(props) {
     const handleOnChaneg =(event)=>{
         console.log("on cahange");
         setText(event.target.value);
+       
     }
 
    const [text,setText]=useState('Enter your text here');
