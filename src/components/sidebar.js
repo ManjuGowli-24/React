@@ -1,14 +1,22 @@
 import React , {useState} from 'react';
 // import { Link } from 'react-router-dom';
 // import Web from './Web';
-import {
+import Contact from './Contact.js';
+import TextArea from './textarea.js';import {
   BrowserRouter as Router,
   Switch,
   Route
 } from "react-router-dom";
-import TextArea from './textarea.js';
 
 export default function SideBar(props) {
+  const cat =()=>{
+      <div class="w3-dropdown-content w3-bar-block w3-card-4">
+        <li><a href="#" class="w3-bar-item w3-button">Merchandise</a></li>
+        <li><a href="#" class="w3-bar-item w3-button">Extras</a></li>
+        <li> <a href="#" class="w3-bar-item w3-button">Media</a></li>
+        </div>
+  }
+
     
   return (
     <>
@@ -17,7 +25,7 @@ export default function SideBar(props) {
   <ul >
     <li><a href="/suggestion" >Rules</a></li>
     <li><a href="/suggestion" >catogory</a><i className="fa fa-caret-down"></i></li>
-    <li><a href="/suggestion" >Contact Us</a></li>
+    <li><a href="/contact_us" >Contact Us</a></li>
     <li><a href="/suggestion" >Suggestion</a></li>
   </ul>
   </div>
@@ -37,7 +45,9 @@ export default function SideBar(props) {
   <Switch>
   <Route path="/suggestion">
   <TextArea/>
-  </Route></Switch>
+  </Route>
+  <Route path="/contact_us">
+  <Contact/></Route></Switch>
   </Router> 
   </div>
   </>

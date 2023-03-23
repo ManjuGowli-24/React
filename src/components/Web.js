@@ -1,6 +1,12 @@
 import React from 'react'
 // import SideBar from './sidebar'
-
+import Discription from './Discription';
+import {
+    BrowserRouter as Router,
+    Switch,
+    Route
+  } from "react-router-dom";
+  
 export default function Web() {
     const mainimage={
         height:"70%",
@@ -25,14 +31,22 @@ export default function Web() {
         textAlign:"center",
         fontFamily:"'Brush Script MT',Open"
     }
+
+// const openImg=()=>{
+   {/* <Router>
+    <Switch>
+    <Route path='/Discription'>
+    </Route></Switch></Router>*/}
+
+// } 
   return (
     <>
     <div>
         <div style={row} >
-            <div  style={column}>
+            <div style={column}>
                 <a href="https://www.w3schools.com/tags/tryit.asp?filename=tryhtml_image_test" />
-                <img src={"./image/lion.jpg"} alt="this " style={mainimage}/><br/>
-                <div  style={animal}>Lion</div>
+                <img src={"./image/lion.jpg"}  style={mainimage}/><br/>
+                <div style={animal}>Lion</div>
             </div>
             <div  style={column}>
                 <a href="https://en.wikipedia.org/wiki/tiger"/>

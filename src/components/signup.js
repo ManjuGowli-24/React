@@ -1,9 +1,10 @@
+import { useEffect } from "react";
 import React from 'react';
 
 export default function SignUp() {
   const created =(event) => {
-    console.log("wdoiqd")
-    alert('Acount created suss');
+    console.log("account crated");
+      alert('Acount created successfully..');
   }
 
   // class use extends React.Component{
