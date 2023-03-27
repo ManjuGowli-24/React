@@ -6,6 +6,7 @@ import {
   Switch,
   Route
 } from "react-router-dom";
+import Contact from './Contact.js';
 import TextArea from './textarea.js';
 
 export default function SideBar(props) {
@@ -17,7 +18,7 @@ export default function SideBar(props) {
   <ul >
     <li><a href="/suggestion" >Rules</a></li>
     <li><a href="/suggestion" >catogory</a><i className="fa fa-caret-down"></i></li>
-    <li><a href="/suggestion" >Contact Us</a></li>
+    <li><a href="/Contact" >Contact Us</a></li>
     <li><a href="/suggestion" >Suggestion</a></li>
   </ul>
   </div>
@@ -37,7 +38,9 @@ export default function SideBar(props) {
   <Switch>
   <Route path="/suggestion">
   <TextArea/>
-  </Route></Switch>
+  </Route>
+  <Route path="/Contact">
+  <Contact/></Route></Switch>
   </Router> 
   </div>
   </>
