@@ -10,7 +10,6 @@ import Contact from './Contact.js';
 import TextArea from './textarea.js';
 
 export default function SideBar(props) {
-    
   return (
     <>
 <div >

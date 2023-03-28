@@ -1,5 +1,6 @@
 import React from 'react'
-// import SideBar from './sidebar'
+import { useState } from 'react'
+import { Animal } from './Animal'
 
 export default function Web() {
     const mainimage={
@@ -25,12 +26,18 @@ export default function Web() {
         textAlign:"center",
         fontFamily:"'Brush Script MT',Open"
     }
+    const [anid,setAnid] = useState();
+    const onClickOpen=()=>{
+        // setAnid(id)
+        console.log("fen");
+    };
+
+
   return (
     <>
     <div>
         <div style={row} >
-            <div  style={column}>
-                <a href="https://www.w3schools.com/tags/tryit.asp?filename=tryhtml_image_test" />
+            <div style={column} onClick={onClickOpen} >
                 <img src={"./image/lion.jpg"} alt="this " style={mainimage}/><br/>
                 <div  style={animal}>Lion</div>
             </div>
@@ -41,7 +48,7 @@ export default function Web() {
             </div>
             <div style={column}>
                 <a href="https://en.wikipedia.org/wiki/white tiger"/>
-                <img src="./image/wtiger.webp" style={mainimage}/><br/>
+                <img src="./image/wtiger.jpg" style={mainimage}/><br/>
                 <div style={animal}>White Tiger</div>
             </div>
         </div>
@@ -87,7 +94,7 @@ export default function Web() {
             </div>
             <div  style={column}>
                 <a href="https://en.wikipedia.org/wiki/hipo"/>
-                <img src="./image/hipo.jpeg"   style={mainimage}/><br/>
+                <img src="./image/hipo.jpg"   style={mainimage}/><br/>
                 <div  style={animal}>Hippopotamus</div>
             </div>
             <div  style={column}>

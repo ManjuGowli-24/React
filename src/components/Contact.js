@@ -19,9 +19,9 @@ export default function Contact() {
         <h3>Contact Number: </h3>
         <p>145-***-****</p>
         <br/>
-        </div>
-        <div >
-        <img src="\image\sidebarimg\fb.jpg" onClick={goToSocial} alt="facebook" />
+       
+       
+        <img src="\image\sidebarimg\fb.jpg"  alt="facebook" /> 
         <img src="\image\sidebarimg\insta.jpg" alt="facebook" />
         <img src="\image\sidebarimg\twit.jpg" alt="facebook" />
         </div>
