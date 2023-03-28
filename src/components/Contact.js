@@ -6,11 +6,13 @@ export default function Contact() {
         marginTop: "70px",
         marginleft: "75px",
         width : "75%",
+        
     }
     const contimage={
       size : "100px",
       width : "100%",
     }
+   
     
     // const goToSocial=()=>{
     //     window.goToSocial.href=id;

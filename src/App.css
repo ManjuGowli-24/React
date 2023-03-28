@@ -126,3 +126,6 @@ color:rgb(78, 142, 215);
   font-size: 18px;
 }
 
+.main{
+  min-height: 80vh;
+}

@@ -20,7 +20,7 @@ import {
 
 function App() {
   return ( 
-  <>
+  <main>
 <div className="headder">
 <Router>
 {/*name is for understanding props--*/}
@@ -60,11 +60,8 @@ function App() {
   </div>
   </Router>
   </div>
-  <div>
-  </div>
- 
-
-  </>
+  
+  </main>
   );
 }
 
