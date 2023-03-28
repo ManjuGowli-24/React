@@ -75,11 +75,11 @@
 }
 
 
-.sidebaritem{
+/* .sidebaritem{
   float :left;
   margin: 0px;
-}
-.sidebaritem ul {
+} */
+/* .sidebaritem ul {
   list-style-type: none;
   top :72px;
   border-radius: 14px;
@@ -90,7 +90,7 @@
   width : 20%;
   height: 100%;
   position:fixed;
-}
+} */
 .sidebaritem  li {
   float: none;
   display: block;
@@ -107,8 +107,6 @@ color:rgb(78, 142, 215);
 .sidebaritem a{
   text-decoration: none;
 }
-
-
 
 .main-cont{
   text-align: center;

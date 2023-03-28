@@ -8,7 +8,7 @@ import Footer from './components/footer.js';
 import LogIn from './components/login.js';
 import SignUp from './components/signup.js';
 import TextArea from './components/textarea.js';
-import Web from './components/Web.js';
+
 
 import {
   BrowserRouter as Router,
@@ -24,12 +24,11 @@ function App() {
 <Router>
 {/*name is for understanding props--*/}
   <NavBar name="This is web page of zoo" />
-  <SideBar/>
-  <div className="container">
+  <div >
   <Switch>
   <Route exact path="/"  >
   {/*<Web/>*/}
-  <Web/>
+  <SideBar/>
   </Route>
 
   <Route exact path="/About">

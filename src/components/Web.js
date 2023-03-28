@@ -34,9 +34,7 @@ export default function Web() {
 
 
   return (
-    <>
-    <div>
-        <div style={row} >
+     <>
             <div style={column} onClick={onClickOpen} >
                 <img src={"./image/lion.jpg"} alt="this " style={mainimage}/><br/>
                 <div  style={animal}>Lion</div>
@@ -51,8 +49,7 @@ export default function Web() {
                 <img src="./image/wtiger.jpg" style={mainimage}/><br/>
                 <div style={animal}>White Tiger</div>
             </div>
-        </div>
-        <div style={row} >
+        
             <div  style={column}>
                 <a href="https://en.wikipedia.org/wiki/Leopard"/>
                 <img src="./image/lepo.jpg" style={mainimage} /><br/>
@@ -68,8 +65,7 @@ export default function Web() {
                 <img src="./image/bear.jpg" style={mainimage} /><br/>
                 <div  style={animal}>Bear</div>
             </div>
-        </div>
-        <div style={row} >
+        
             <div style={column}>
                 <a href="https://en.wikipedia.org/wiki/camel"/>
                 <img src="./image/camel.jpg" style={mainimage}/><br/>
@@ -85,8 +81,7 @@ export default function Web() {
                 <img src="./image/rhino.jpg" style={mainimage} /><br/>
                 <div style={animal}>Rhinoceros</div>
             </div>
-        </div>
-        <div style={row} >
+        
             <div style={column}>
                 <a href="https://en.wikipedia.org/wiki/deer" target="_blank"/>
                 <img src="./image/deer.jpg"  style={mainimage}/><br/>
@@ -102,9 +97,9 @@ export default function Web() {
                 <img src="./image/zebra.jpg" style={mainimage}/><br/>
                 <div  style={animal}>Zebra</div>
             </div>
-        </div> 
         
-        </div> 
+        
+
 
     </>
   )
