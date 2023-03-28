@@ -6,8 +6,8 @@ import {
   Switch,
   Route
 } from "react-router-dom";
-import Contact from './Contact.js';
-import TextArea from './textarea.js';
+// import Contact from './Contact.js';
+// import TextArea from './textarea.js';
 import { Animal } from './Animal.js';
 
 export default function SideBar(props) {
@@ -17,7 +17,8 @@ export default function SideBar(props) {
     gridTemplateColumns: "auto auto auto auto",
     gap: "10px",
     // padding: "10px",
-    folat : "left",
+    // float : "left",
+    
     marginTop : "70px",
     marginLeft : "10px",
     backgroundColor: "rgb(239, 245, 245)",
@@ -51,7 +52,7 @@ const mainimage={
 const [anim ,setAnim]=useState(Animal);
 
   return (
-    <>
+  <div>
 <div style={gridContainer}>
 <div style={sidebaritem}  className="sidebaritem">
     <li><a href="/suggestion" >Rules</a></li>
@@ -62,11 +63,11 @@ const [anim ,setAnim]=useState(Animal);
 {
   anim.map((data)=>{
     const {id ,image, diss ,name ,alt }=data;
-    
+
     return (
       <div style={column} >
         <img src={image} alt={alt} style={mainimage}/><br/>
-      <div  style={animal}>{name}</div>
+        <div  style={animal}>{name}</div>
       </div>
     )
   })
@@ -131,17 +132,16 @@ const [anim ,setAnim]=useState(Animal);
   <div  style={animal}>Zebra</div>
 </div>*/}
 
-{/* for routeing in sidebar*/}
+{/* for routeing in sidebar
   </div>
   <Router>
   <Switch>
-  <Route path="/suggestion">
-  <TextArea/>
-  </Route>
-  <Route path="/Contact">
-  <Contact/></Route></Switch>
-  </Router> 
-  </>
+  
+  </Switch>
+  </Router> */}
+
+  </div>
+  </div>
   )
   }
 
