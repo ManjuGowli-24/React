@@ -8,7 +8,7 @@ import Footer from './components/footer.js';
 import LogIn from './components/login.js';
 import SignUp from './components/signup.js';
 import TextArea from './components/textarea.js';
-
+import Contact from './components/Contact.js';
 
 import {
   BrowserRouter as Router,
@@ -49,7 +49,12 @@ function App() {
 
 }}/>
 
+<Route path="/suggestion">
+  <TextArea/>
+  </Route>
 
+  <Route path="/Contact">
+  <Contact/></Route>
 
   </Switch>
   </div>

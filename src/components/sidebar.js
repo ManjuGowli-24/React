@@ -6,7 +6,7 @@ import {
   Switch,
   Route
 } from "react-router-dom";
-import Contact from './Contact.js';
+
 import TextArea from './textarea.js';
 import { Animal } from './Animal.js';
 
@@ -51,7 +51,7 @@ const mainimage={
 const [anim ,setAnim]=useState(Animal);
 
   return (
-    <>
+    
 <div style={gridContainer}>
 <div style={sidebaritem}  className="sidebaritem">
     <li><a href="/suggestion" >Rules</a></li>
@@ -131,17 +131,13 @@ const [anim ,setAnim]=useState(Animal);
   <div  style={animal}>Zebra</div>
 </div>*/}
 
-{/* for routeing in sidebar*/}
+{/* for routeing in sidebar
   </div>
   <Router>
   <Switch>
-  <Route path="/suggestion">
-  <TextArea/>
-  </Route>
-  <Route path="/Contact">
-  <Contact/></Route></Switch>
-  </Router> 
-  </>
+  </Switch>
+  </Router> */}
+  </div>
   )
   }
 
