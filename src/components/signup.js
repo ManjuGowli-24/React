@@ -24,8 +24,8 @@ export default function SignUp() {
     <label htmlFor="psw"><b>Password</b></label><br />
     <input type="password" placeholder="Enter Password" name="psw" required/><br />
 
-    <label htmlFor="psw-repeat"><b>Repeat Password</b></label><br />
-    <input type="password" placeholder="Repeat Password" name="psw-repeat" required/><br/>
+    <label htmlFor="psw-repeat"><b>Confim Password</b></label><br />
+    <input type="password" placeholder="Re-enter Password" name="psw-repeat" required/><br/>
     <button type="submit" onClick={created} className='btn btn-primary my-2'>Sign Up</button>
     </div>
    

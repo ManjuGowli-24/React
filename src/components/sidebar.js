@@ -4,11 +4,7 @@ import React , {useState,useEffect} from 'react';
 // import { Animal } from './Animal.js';
 // import TextArea from './textarea.js';
 import axios from 'axios';
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route
-} from "react-router-dom";
+// import {useNavigate} from "react-router-dom";
 
 export default function SideBar(props) {
 
@@ -28,7 +24,6 @@ export default function SideBar(props) {
     width : "260px",
     borderRadius: "14px",
     overflow: "hidden",
-   
     listStyleType: "none",
   }
   const column={
@@ -58,6 +53,11 @@ useEffect(()=>{
   fethchAnimal()
 },[])
 
+// const onClickImg = (id)=>{
+//           // <a href="/login"></a> 
+//           console.log(`clicked `);
+//         }
+  
   return (
     
 <div style={gridContainer}>
@@ -74,7 +74,7 @@ useEffect(()=>{
     return (
       <div style={column} >
         <img src={image} alt={alt} style={mainimage}/><br/>
-      <div  style={animal}>{name}</div>
+      <div  style={animal}>{name} </div>
       </div>
     )
   })
