@@ -1,5 +1,4 @@
 import ReactDOM from 'react-dom/client';
-import Recat from 'react';
 import React,{useState} from 'react';
 
 export default function TextArea(props) {

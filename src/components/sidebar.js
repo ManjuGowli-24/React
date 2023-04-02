@@ -1,14 +1,14 @@
-import React , {useState} from 'react';
+import React , {useState,useEffect} from 'react';
 // import { Link } from 'react-router-dom';
 // import Web from './Web';
+// import { Animal } from './Animal.js';
+// import TextArea from './textarea.js';
+import axios from 'axios';
 import {
   BrowserRouter as Router,
   Switch,
   Route
 } from "react-router-dom";
-
-import TextArea from './textarea.js';
-import { Animal } from './Animal.js';
 
 export default function SideBar(props) {
 
@@ -48,7 +48,15 @@ const mainimage={
   border:"5px solid #555"
 }
 
-const [anim ,setAnim]=useState(Animal);
+const [anim ,setAnim]=useState([]);
+
+useEffect(()=>{
+  const fethchAnimal = async ()=> {
+    const {data}= await axios.get('api/animal')
+
+    setAnim(data)}
+  fethchAnimal()
+},[])
 
   return (
     
@@ -60,8 +68,8 @@ const [anim ,setAnim]=useState(Animal);
     <li><a href="/suggestion" >Suggestion</a></li>
   </div>
 {
-  anim.map((data)=>{
-    const {id ,image, diss ,name ,alt }=data;
+  anim.map((ele)=>{
+    const {id ,image, diss ,name ,alt }=ele;
     
     return (
       <div style={column} >
