@@ -47,7 +47,7 @@ const [anim ,setAnim]=useState([]);
 
 useEffect(()=>{
   const fethchAnimal = async ()=> {
-    const {data}= await axios.get('api/animal')
+    const {data}= await axios.get('/api/animal');
 
     setAnim(data)}
   fethchAnimal()
@@ -63,7 +63,7 @@ useEffect(()=>{
 <div style={gridContainer}>
 <div style={sidebaritem}  className="sidebaritem">
     <li><a href="/suggestion" >Rules</a></li>
-    <li><a href="/suggestion" >catogory</a><i className="fa fa-caret-down"></i></li>
+    <li><a href="/suggestion" >catogory</a></li>
     <li><a href="/Contact" >Contact Us</a></li>
     <li><a href="/suggestion" >Suggestion</a></li>
   </div>

@@ -28,15 +28,15 @@ function App() {
   <Switch>
   <Route exact path="/"  >
   {/*<Web/>*/}
-  <SideBar/>
+  <LogIn/>
   </Route>
 
   <Route exact path="/About">
   <About/>
   </Route>
 
-  <Route exact path="/LogIn">
-  <LogIn/>
+  <Route exact path="/home" >
+  <SideBar/>
   </Route>
 
   <Route exact path="/SignUp" >
